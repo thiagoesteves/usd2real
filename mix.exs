@@ -39,7 +39,10 @@ defmodule Usd2real.MixProject do
 
       # html parser
       {:floki, "~> 0.30.0"},
-      {:dialyxir, "~> 1.0", only: [:dev], runtime: false}
+      {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
+
+      # static analysis
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false}
     ]
   end
 end

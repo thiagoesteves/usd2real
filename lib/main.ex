@@ -74,9 +74,9 @@ defmodule Usd2real do
     country2 = parsed_doc |> Floki.find(".currency-field2") |> capture_country_info
 
     IO.puts(
-      "[#{country1.name}] #{country1.value} #{country1.code} => #{country2.value} #{country2.code} [#{
-        country2.name
-      }]"
+      " ¯\\_(ツ)_/¯ [#{country1.name}] #{country1.value} #{country1.code} => #{country2.value} #{
+        country2.code
+      } [#{country2.name}]"
     )
   end
 
