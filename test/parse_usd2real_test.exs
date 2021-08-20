@@ -17,7 +17,7 @@ defmodule Usd2realTest do
   test "request USD REAL convertion" do
     fun = fn -> main(["--filename", "test/test.txt"]) end
 
-    expected = "[Estados Unidos] 1,000 USD => 5,056 BRL [Brasil]\n"
+    expected = " ¯\\_(ツ)_/¯ [Estados Unidos] 1,000 USD => 5,056 BRL [Brasil]\n"
 
     actual = capture_io(:stdio, fun)
     assert actual == expected
